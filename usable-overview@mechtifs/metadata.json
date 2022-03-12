@@ -1,0 +1,12 @@
+{
+  "description": "Right click when activating the top-left hot corner. It makes way more sense.",
+  "name": "Usable Overview",
+  "shell-version": [
+    "40",
+    "41",
+    "42"
+  ],
+  "url": "https://github.com/mechtifs/usable-overview",
+  "uuid": "usable-overview@mechtifs",
+  "version": 1
+}

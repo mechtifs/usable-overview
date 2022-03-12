@@ -1,5 +1,5 @@
 {
-  "description": "Right click when activating the top-left hot corner. It makes way more sense.",
+  "description": "Right clicking when activating the top-left hot corner brings up the application grid. It makes way more sense.",
   "name": "Usable Overview",
   "shell-version": [
     "40",

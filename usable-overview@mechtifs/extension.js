@@ -4,8 +4,8 @@ let _indicator;
 
 function _showApps(widget, event) {
 	if (event.get_button() == 3) {
-		Main.overview._overview._controls._toggleAppsPage()
-	}	
+		Main.overview._overview._controls._toggleAppsPage();
+	}
 }
 
 function init() {
@@ -13,11 +13,9 @@ function init() {
 
 function enable() {
     _indicator = Main.panel.statusArea['activities'].connect('button-release-event', _showApps);
-	Main.overview.dash.showAppsButton.hide();
 }
 
 function disable() {
 	Main.panel.statusArea['activities'].disconnect(_indicator);
-	Main.overview.dash.showAppsButton.show();
 }
 

@@ -10,4 +10,5 @@ even worse than it used to be on GNOME 3.x).
 Thus, I created this extension to make the overal experience way more comfortable. You just need to activate the top-left hot corner, 
 then simply hit the right button on your mouse and everything rocks.
 ## Demostration & Installation
-Visit https://extensions.gnome.org/extension/4895/usable-overview/.
+Please visit
+[<img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle">](https://extensions.gnome.org/extension/4895/usable-overview/)

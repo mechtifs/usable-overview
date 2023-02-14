@@ -1,5 +1,5 @@
 {
-  "description": "Right click when activating the top-left hot corner. It makes way more sense.",
+  "description": "Right click at top left corner to bring up apps menu.",
   "name": "Usable Overview",
   "shell-version": [
     "40",
@@ -9,5 +9,5 @@
   ],
   "url": "https://github.com/mechtifs/usable-overview",
   "uuid": "usable-overview@mechtifs",
-  "version": 2
+  "version": 3
 }

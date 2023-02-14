@@ -1,26 +1,28 @@
 const { GLib } = imports.gi;
 const Main = imports.ui.main;
 
-var OVERVIEW_ACTIVATION_TIMEOUT = 0.5;
+class Extension {
+	constructor() {}
 
-let _rightClick;
-let _triggerTime = 0;
+	showApps(widget, event) {
+		if (event.get_button() === 3
+				&& GLib.get_monotonic_time() / GLib.USEC_PER_SEC - this._triggerTime > 0.5) {
+			Main.overview._overview._controls._toggleAppsPage();
+			this._triggerTime = GLib.get_monotonic_time() / GLib.USEC_PER_SEC;
+		}
+	}
 
-function _showApps(widget, event) {
-	if (event.get_button() == 3
-			&& GLib.get_monotonic_time() / GLib.USEC_PER_SEC - _triggerTime > OVERVIEW_ACTIVATION_TIMEOUT) {
-		Main.overview._overview._controls._toggleAppsPage();
-		_triggerTime = GLib.get_monotonic_time() / GLib.USEC_PER_SEC;
+	enable() {
+		this._triggerTime = 0;
+		Main.panel.statusArea['activities'].connectObject(
+			'button-release-event', (widget, event) => this.showApps(widget, event), this);
+	}
+
+	disable() {
+		Main.panel.statusArea['activities'].disconnectObject(this);
 	}
 }
 
 function init() {
-}
-
-function enable() {
-	_rightClick = Main.panel.statusArea['activities'].connect('button-release-event', _showApps);
-}
-
-function disable() {
-	Main.panel.statusArea['activities'].disconnect(_rightClick);
+	return new Extension();
 }

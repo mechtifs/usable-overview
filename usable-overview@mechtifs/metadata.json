@@ -2,12 +2,9 @@
   "description": "Right click at top left corner to bring up apps menu.",
   "name": "Usable Overview",
   "shell-version": [
-    "40",
-    "41",
-    "42",
-    "43"
+    "45"
   ],
   "url": "https://github.com/mechtifs/usable-overview",
   "uuid": "usable-overview@mechtifs",
-  "version": 3
+  "version": 4
 }

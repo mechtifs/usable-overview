@@ -1,9 +1,8 @@
-const { GLib } = imports.gi;
-const Main = imports.ui.main;
+import GLib from 'gi://GLib';
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js';
 
-class Extension {
-	constructor() {}
-
+export default class UsableOverviewExtension extends Extension {
 	showApps(widget, event) {
 		if (event.get_button() === 3
 				&& GLib.get_monotonic_time() / GLib.USEC_PER_SEC - this._triggerTime > 0.5) {
@@ -21,8 +20,4 @@ class Extension {
 	disable() {
 		Main.panel.statusArea['activities'].disconnectObject(this);
 	}
-}
-
-function init() {
-	return new Extension();
 }

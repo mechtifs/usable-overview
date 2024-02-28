@@ -2,9 +2,12 @@
   "description": "Right click at top left corner to bring up apps menu.",
   "name": "Usable Overview",
   "shell-version": [
-    "45"
+    "45",
+    "46"
   ],
   "url": "https://github.com/mechtifs/usable-overview",
   "uuid": "usable-overview@mechtifs",
-  "version": 4
+  "settings-schema": "org.gnome.shell.extensions.usable-overview",
+  "gettext-domain": "gnome-shell-extension-usable-overview",
+  "version": 5
 }

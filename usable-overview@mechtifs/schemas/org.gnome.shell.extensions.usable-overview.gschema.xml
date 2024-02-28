@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extension-usable-overview">
+  <schema id="org.gnome.shell.extensions.usable-overview" path="/org/gnome/shell/extensions/usable-overview/">
+    <key name="hide-button" type="b">
+      <default>false</default>
+    </key>
+  </schema>
+</schemalist>

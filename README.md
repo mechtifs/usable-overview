@@ -2,15 +2,28 @@
 
 ## Introduction
 
-A simple extension for GNOME Shell. 
-  
-When it comes to mouse-only navigation, the default gnome workflow really sucks, 
-especially on GNOME 40+ (which means if you would like to open the application grid, 
-you need to first activate the top-left hot corner then move your cursor all the way down to the screen bottom and click that stinky botton, 
-even worse than it used to be on GNOME 3.x)
-  
-Thus, I created this extension to make the overal experience way more comfortable. You just need to activate the top-left hot corner, 
-then simply hit the right button on your mouse and everything rocks
+A neat small extension that enhance your workflow, making the overview actually usable.
+
+## The Issue
+
+GNOME 40 was out.
+Surely it's no doubt a wonderful release, however I *do* think something is just not right.
+Sometimes I don't feel like putting my hands on the keyboard, using only mouse to navigate around.
+Now here comes the issue:
+
+To enter the overview, the cursor should move all the way up left to trigger the hot corner.
+However, to enter the apps grid, the cursor should move all the way down to the screen bottom then click the "Show Apps" button.
+
+The experience is just plain **frustrating** to say the least.
+In the GNOME 3.x era, it was *somewhat* bearable since the button was just on the left side.
+What's even worse, it's **impossible** to build up muscle memory.
+Because, once an app is opened, the app icon in the dash just push the button to the right.
+
+## The Solution
+
+The desired behavior is entering the apps grid without headache.
+When right clicked on the "Activities" button, it just brings up the apps grid.
+Simple and Straightforward.
 
 ## Demostration & Installation
 

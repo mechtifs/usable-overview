@@ -7,7 +7,5 @@
   ],
   "url": "https://github.com/mechtifs/usable-overview",
   "uuid": "usable-overview@mechtifs",
-  "settings-schema": "org.gnome.shell.extensions.usable-overview",
-  "gettext-domain": "gnome-shell-extension-usable-overview",
   "version": 5
 }

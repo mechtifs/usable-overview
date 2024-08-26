@@ -3,9 +3,10 @@
   "name": "Usable Overview",
   "shell-version": [
     "45",
-    "46"
+    "46",
+    "47"
   ],
   "url": "https://github.com/mechtifs/usable-overview",
   "uuid": "usable-overview@mechtifs",
-  "version": 5
+  "version": 7
 }
